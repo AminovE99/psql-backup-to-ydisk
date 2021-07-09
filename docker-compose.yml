@@ -4,8 +4,6 @@ services:
 
   postgres-backup:
     build: .
-    depends_on:
-      - postgresql
     env_file:
       - .env
     volumes:
